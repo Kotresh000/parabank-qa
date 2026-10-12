@@ -1,0 +1,19 @@
+{
+  "name": "parabank-qa",
+  "version": "1.0.0",
+  "description": "QA Automation Framework for ParaBank - ImmverseAI Senior QA Engineer Assignment",
+  "scripts": {
+    "test": "playwright test",
+    "test:headless": "playwright test",
+    "test:scenario-a": "playwright test tests/scenario-a.spec.ts",
+    "test:scenario-b": "playwright test tests/scenario-b.spec.ts",
+    "test:scenario-c": "playwright test tests/scenario-c.spec.ts",
+    "report": "open test-results/report.html",
+    "clean": "rm -rf test-results && mkdir -p test-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
